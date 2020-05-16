@@ -73,7 +73,7 @@ a {
     line-height: 2em;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap-reverse;               
+    flex-wrap: wrap-reverse;          
 }
 
 .portfolio {
@@ -91,6 +91,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     vertical-align: middle;
+    margin: 0% 10vw 0% 10vw;
 }
 
 .item {
@@ -98,11 +99,20 @@ a {
     min-width: 300px;
     min-height: 200px;
     max-width: 20vw;
-    max-height: fit-content;
+    max-height:fit-content;
     margin-top: 2vw;
     margin-bottom: 5vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color:#DEDEDE;
+    border-color: #DEDEDE;
+    border-width: 0.5vh;
+    border-style: solid;
+    color:#303030;
+}
+.item:hover{
+    color: black;
+    border-bottom-color: #505050;
 }
 .item > h3{
     padding-bottom: 2vw;
@@ -110,10 +120,11 @@ a {
 }
 
 .category {
-    color: darkgray;
+    color: #505050;
     font-size: 1rem;
     text-align: center;
-    margin: 1vw;
+    padding: 2vh;
+    margin-top: 0.8vh;
 }
 
 .resume {
@@ -124,6 +135,7 @@ a {
     vertical-align: middle;
     line-height: 4vw;
 }
+
 .footer{
     background-color: #303030;
     color: beige;
@@ -207,14 +219,18 @@ a {
 #gallery {
     opacity: 1;
     cursor: pointer;
-    min-height: 200px;
+    min-height: 300px;
     min-width: 300px;
     width: fit-content;
     height: fit-content ;
     max-width: 20vw;
-    max-height: 15vw;
-    object-fit: cover;
-    margin-bottom: 3vh;
+    max-height: 5vh;
+    object-fit: contain;
+    margin:1vh 0vh 1vh 0vh;    
+    padding-bottom: 1vh;
+    border-bottom-width: 0.25vh;
+    border-bottom-style: solid;
+    border-bottom-color: #505050;
 }
 
 #gallery:hover {
@@ -232,19 +248,32 @@ a {
     object-fit: cover;
 }
 
-#certi{
-    background-color:#404040;
-    border-color: #404040;
-    border-width: 1vh;
-    border-style: solid;
-    color:whitesmoke;
+#title{
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+    vertical-align: middle;
+    text-align: justify;
+    border-bottom-width: 0.25vh;
+    border-bottom-style: solid;
+    border-bottom-color: #505050;
 }
-#proj{
-    background-color: #505050;
-    border-color: #505050;
-    border-width: 1vh;
-    border-style: solid;
-    color:whitesmoke;
+#iconc{
+    height: 5vh;
+    width: 3.8vh;
+    background-image: url("cert.png");
+    background-size: cover;
+    opacity: 0.6;
+    align-self: flex-end;
+    margin: 1vh;
+}
+#iconp{
+    height: 5vh;
+    width: 5vh;
+    background-image: url("proj.png");
+    background-size: cover;
+    opacity: 0.6;
+    margin: 1vh;
 }
 #menu_head{
     color: #505050;
