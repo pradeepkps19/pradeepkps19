@@ -235,6 +235,8 @@ a {
 
 #gallery:hover {
     opacity: 0.8;
+    border-bottom-color: white;
+    border-bottom-width: 0.5vh;
 }
 
 #img {
