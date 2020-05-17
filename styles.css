@@ -105,14 +105,16 @@ a {
     margin-left: 1vw;
     margin-right: 1vw;
     background-color:#DEDEDE;
-    border-color: #DEDEDE;
+    border-color:#DEDEDE;
     border-width: 0.5vh;
     border-style: solid;
     color:#303030;
 }
 .item:hover{
+    opacity: 0.8;
     color: black;
-    border-bottom-color: #505050;
+    border-color:#DEDEDE #DEDEDE #252525 #DEDEDE  ;
+
 }
 .item > h3{
     padding-bottom: 2vw;
@@ -120,7 +122,7 @@ a {
 }
 
 .category {
-    color: #505050;
+    color: beige;
     font-size: 1rem;
     text-align: center;
     padding: 2vh;
@@ -230,13 +232,7 @@ a {
     padding-bottom: 1vh;
     border-bottom-width: 0.25vh;
     border-bottom-style: solid;
-    border-bottom-color: #505050;
-}
-
-#gallery:hover {
-    opacity: 0.8;
-    border-bottom-color: white;
-    border-bottom-width: 0.5vh;
+    border-bottom-color:darkgrey;
 }
 
 #img {
@@ -259,22 +255,21 @@ a {
     border-bottom-width: 0.25vh;
     border-bottom-style: solid;
     border-bottom-color: #505050;
+    background-color: #252525;
 }
 #iconc{
     height: 5vh;
     width: 3.8vh;
-    background-image: url("cert.png");
+    background-image: url("cert_w.png");
     background-size: cover;
-    opacity: 0.6;
     align-self: flex-end;
     margin: 1vh;
 }
 #iconp{
     height: 5vh;
     width: 5vh;
-    background-image: url("proj.png");
+    background-image: url("proj_w.png");
     background-size: cover;
-    opacity: 0.6;
     margin: 1vh;
 }
 #menu_head{
