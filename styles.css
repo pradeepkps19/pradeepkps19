@@ -271,6 +271,7 @@ a {
     background-image: url("proj_w.png");
     background-size: cover;
     margin: 1vh;
+    margin-top: 1.5vh;
 }
 #menu_head{
     color: #505050;
