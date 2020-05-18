@@ -2,6 +2,18 @@
     margin: 0%;
     padding: 0%;
 }
+::-webkit-scrollbar {
+    width: 1vh;
+}
+::-webkit-scrollbar-track {
+    background: #DEDEDE;    
+}
+::-webkit-scrollbar-thumb {
+    background: #505050; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #252525; 
+}
 body{
     overflow-x: hidden;
 }
