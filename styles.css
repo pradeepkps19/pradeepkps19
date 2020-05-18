@@ -89,7 +89,7 @@ a {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     vertical-align: middle;
     margin: 0% 10vw 0% 10vw;
 }
@@ -101,7 +101,7 @@ a {
     max-width: 20vw;
     max-height:fit-content;
     margin-top: 2vw;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     margin-left: 1vw;
     margin-right: 1vw;
     background-color:#DEDEDE;
@@ -261,6 +261,14 @@ a {
     height: 5vh;
     width: 3.8vh;
     background-image: url("cert_w.png");
+    background-size: cover;
+    align-self: flex-end;
+    margin: 1vh;
+}
+#iconco{
+    height: 5vh;
+    width: 5vh;
+    background-image: url("course_w.png");
     background-size: cover;
     align-self: flex-end;
     margin: 1vh;
