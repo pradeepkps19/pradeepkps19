@@ -4,16 +4,62 @@
 }
 ::-webkit-scrollbar {
     width: 1vh;
-}
-::-webkit-scrollbar-track {
-    background: #DEDEDE;    
-}
-::-webkit-scrollbar-thumb {
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #DEDEDE;
+     
+  }
+   
+  ::-webkit-scrollbar-thumb {
     background: #505050; 
-}
-::-webkit-scrollbar-thumb:hover {
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
     background: #252525; 
-}
+  }
+  .collapsible {
+    background-color: #505050;
+    color: white;
+    cursor: pointer;
+    padding: 2vh;
+    width:80%;
+    border-radius: 30vw;
+    margin-top: 3vh;
+    max-width: 1100vw ;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2vh;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #707070;
+
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background-color: #f1f1f1;
+  }
+
 body{
     overflow-x: hidden;
 }
@@ -101,9 +147,13 @@ a {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     vertical-align: middle;
     margin: 0% 10vw 0% 10vw;
+    border-bottom-style: solid;
+    border-bottom-width: 2% ;
+    padding-bottom: 5vh;
+    border-bottom-color: #808080 ;
 }
 
 .item {
@@ -113,7 +163,6 @@ a {
     max-width: 20vw;
     max-height:fit-content;
     margin-top: 2vw;
-    margin-bottom: 10vh;
     margin-left: 1vw;
     margin-right: 1vw;
     background-color:#DEDEDE;
@@ -235,7 +284,7 @@ a {
     cursor: pointer;
     min-height: 300px;
     min-width: 300px;
-    width: fit-content;
+    width: max-content;
     height: fit-content ;
     max-width: 20vw;
     max-height: 5vh;

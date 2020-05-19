@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Pradeep</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
+
     <div class="main">
         <div class="header">
             <a id="menu" href="#">Home</a>
             <a id="menu" href="#about">About</a>
-            <a id="menu" href="#creations">Projects</a>
+            <a id="menu" href="#creations">Portfolio</a>
             <a id="menu" href="#resume1">Resume</a>
             <a id="menu" href="#contact">Contact</a>
         </div>
@@ -25,11 +28,13 @@
         </div>
         <div class="frame">
             <div id="about">
+
             </div>
             <div class="about">
                 <div id="abtimg">
                     <image id="abt" src="abt.png" />
                 </div>
+
                 <div id="abttext">
                     <h1 id="menu_head">Me talking about myself</h1><br />
                     <p>Hi, I am a student born and raised in Coimbatore, currently pursuing my degree in Information
@@ -49,11 +54,29 @@
                 </div>
             </div>
             <div id="creations">
+
             </div>
             <div class="portfolio">
                 <h1 id="menu_head">My achievements and projects</h1><br />
             </div>
-            <div class="cards">                
+            <button class="collapsible">COURSES</button>
+            <div class="content">
+            <div class="cards">
+                <div class="item">
+                    <div id="title">
+                        <p class="category">Course</p>
+                        <div id="iconco"></div>
+                    </div>
+                    <a href="https://www.coursera.org/account/accomplishments/records/QPDZM7H9G5B8?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+                        target="_blank" rel="noopener noreferrer">
+                        <image id="gallery" src="coursera.png" /></a>
+                    <h3>GETTING STARTED WITH AWS MACHINE LEARNING </h3>
+                </div>
+            </div>
+            </div>
+            <button class="collapsible">CERTIFICATES</button>
+            <div class="content">
+            <div class="cards">
                 <div class="item">
                     <div id="title">
                         <p class="category">Certificate</p>
@@ -84,16 +107,11 @@
                         <image id="gallery" src="ncc.JPG" /></a>
                     <h3>NCC 'A'</h3>
                 </div>
-                <div class="item">
-                    <div id="title">
-                        <p class="category">Course</p>
-                        <div id="iconco"></div>
-                    </div>
-                    <a href="https://www.coursera.org/account/accomplishments/records/QPDZM7H9G5B8?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
-                        target="_blank" rel="noopener noreferrer">
-                        <image id="gallery" src="coursera.png" /></a>
-                    <h3>GETTING STARTED WITH AWS MACHINE LEARNING </h3>
-                </div>
+            </div>
+            </div>
+            <button class="collapsible">PROJECTS</button>
+            <div class="content">
+            <div class="cards">                
                 <div class="item">
                     <div id="title">
                         <p class="category">Project</p>
@@ -119,7 +137,7 @@
                         <p class="category">Project</p>
                         <div id="iconp"></div>
                     </div>
-                    <a href="https://github.com/pradeepkps19/Car-Rental-webapplication" target="_blank"
+                    <a href="https://github.com/pradeepkps19/Blood_Bank_Management" target="_blank"
                         rel="noopener noreferrer">
                         <image id="gallery" src="car.png" /></a>
                     <h3>ONLINE CAR RENTAL APPLICATION (HTML, CSS, PHP, MySQL, XAMPP)</h3>
@@ -135,6 +153,7 @@
                     <h3>MOBILE APPLICATION UI/UX PROTOTYPE (InVision Studio)</h3>
                 </div>
             </div>
+            </div>
             <div id="resume1">
             </div>
             <div class="resume">
@@ -145,6 +164,7 @@
             </div>
         </div>
         <div id="contact">
+
         </div>
         <div class="footer">
             <h1>Get in touch</h1>
@@ -163,10 +183,29 @@
             <div id="con">
                 <h4>Email : <a id="link" href="mailto:pradeepkps19@gmail.com?subject = Feedback&body = Message"
                         target="_blank" rel="noopener noreferrer">pradeepkps19@gmail.com</a></h4>
+
                 <h4> Mobile : <a id="link" href="tel:+917845104680">+91-78451-04680</a></h4>
             </div>
             <h5>THANK YOU FOR VISITING &nbsp;&nbsp;&nbsp; - with &#128153; Pradeep</h5>
+
         </div>
     </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 </body>
+
 </html>
