@@ -97,7 +97,7 @@ a {
 }
 
 .top {
-    background-image: url("bg.jpg");
+    background-image: url("images/bg.jpg");
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
